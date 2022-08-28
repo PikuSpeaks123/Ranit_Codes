@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
-#include <math.h>
 
-int check_prime(int);
 int main()
 {
     int n, m, i, j, k, f;

@@ -20,7 +20,7 @@ void main()
   for(i=0;i<n-1;i++)
   {
     indexOfMin=i;
-    for(j=i+1;j<n-1;j++)
+    for(j=i+1;j<n;j++)
     {
       if(arr[j]<arr[indexOfMin])
       {

@@ -16,12 +16,12 @@ void main()
   {
     printf("%d ",arr[i]);
   }
-  //Bubble sort
+  //Bubble sort 
   for(i=0;i<n-1;i++)
   {
     for(j=0;j<n-1-i;j++)
     {
-      if(arr[j]>arr[j+1])
+      if(arr[j]>arr[j+1]) // sorting in ascending order
       {
 	temp=arr[j];
 	arr[j]=arr[j+1];
@@ -29,7 +29,7 @@ void main()
       }
     }
   }
-  printf("\nThe array elements after sorting are : ");
+  printf("\nThe array elements after sorting in ascending order are : ");
   for(i=0;i<n;i++)
   {
     printf("%d ",arr[i]);

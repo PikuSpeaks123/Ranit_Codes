@@ -3,10 +3,12 @@
 #include<conio.h>
 void main()
 {
- int arr[50],n,i,high=n-1,low=0,mid,key,pos,flag=0;
+ int arr[50],n,i,high,low,mid,key,pos,flag=0;
  clrscr();
  printf("Enter n : ");
  scanf("%d",&n);
+ low=0;
+ high=n;
  printf("Enter array elements : ");
  for(i=0;i<n;i++)
  {
@@ -32,7 +34,7 @@ void main()
  }
  if(flag==1)
  {
-   printf("%d present in %d index",key,pos);
+   printf("%d present in %dth index",key,pos);
  }else
  {
    printf("%d Not Present.",key);

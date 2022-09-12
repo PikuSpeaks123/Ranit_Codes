@@ -3,7 +3,7 @@
 #include<conio.h>
 void main()
 {
- int arr[50],n,i,high,low,mid,key,pos,flag=0;
+ int arr[50],n,i,high=n-1,low=0,mid,key,pos,flag=0;
  clrscr();
  printf("Enter n : ");
  scanf("%d",&n);

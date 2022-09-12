@@ -8,7 +8,7 @@ void main()
  printf("Enter n : ");
  scanf("%d",&n);
  low=0;
- high=n;
+ high=n-1;
  printf("Enter array elements : ");
  for(i=0;i<n;i++)
  {

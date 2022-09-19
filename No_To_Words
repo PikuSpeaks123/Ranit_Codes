@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int n;
+    char ar1[50][50] = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
+    char ar2[50][50] = {"Twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"};
+    clrscr();
+    printf("Enter the number not exceeding 999\n");
+    scanf("%d", &n);
+    if (n / 100)
+    {
+        printf("%s hundred and ", ar1[(n / 100) - 1]);
+        n = n % 100;
+    }
+    if (n > 19)
+    {
+        printf("%s", ar2[(n / 10) - 2]);
+        n = n % 10;
+    }
+    if (n)
+        printf("%s", ar1[n - 1]);
+    getch();
+    return;
+}
